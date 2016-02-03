@@ -1,0 +1,36 @@
+body {
+}
+
+#net-selector{
+    right: 0;
+    position: absolute;
+    width: 100px;
+}
+
+#noRules {
+    left: 0;
+    position: absolute;
+    width: 25%;
+    height: 24%;
+}
+
+#personalRules {
+    left: 25%;
+    position: absolute;
+    width: 25%;
+    height: 24%;
+}
+
+#masterRules {
+    left: 50%;
+    position: absolute;
+    width: 25%;
+    height: 24%;
+}
+
+#enableAllRules {
+    left: 75%;
+    position: absolute;
+    width: 25%;
+    height: 24%;
+}

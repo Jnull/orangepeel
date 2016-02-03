@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <base href="." target="_self">
+    <title>Main</title>
+    <link rel="stylesheet" href="./sidebar.css">
+</head>
+<body>
+
+<div id="main_content_title">
+    <h1>Planet Starbucks</h1>
+</div>
+<!--
+<nav>
+    <ul id="horz_nav_ul">
+        <li> <a href="./main.html" >Home</a>
+        <li> <a href="#"  >Site Rules</a>
+        <li> <a href="#" >Chat</a>
+        <li> <a href="#"  >History</a>
+        </li>
+    </ul>
+</nav>
+-->
+
+<article id="connection_list_box">
+
+    <ul id="connection_list">
+        <!-- test data only
+        <li> whatever </li>
+        <li> whatever </li>
+        <li> whatever </li>
+        <li> whatever </li>
+        -->
+    </ul>
+
+</article>
+<a id="export_link" href="#" onclick="Export_CVS()">Export CVS File</a>
+<!-- RTC Start -->
+<div id="content">
+
+    <div id="admin_section">
+        <label> Admin Functions:</label>
+        <br><input id="Admin_Refresh_All_Remote_User_pages" type="submit" value="Refresh All User Browser Pages!">
+        <br><input id="Admin_Start_All_Remote_Cameras" type="submit" value="Start All User Cameras!">
+    </div>
+
+    <div id="user_section">
+        <h5>Enter a room, or make a new one...</h5>
+        <input id="New_Room_Name" type="text" placeholder="Room name..." value="test">
+        <input id="New_Room_Create" type="submit" value="Create New Room">
+        <input id="Refesh_Page" Value="Refresh" type="button" onclick="location.reload(true);">
+    </div>
+
+
+    <h1 id="URL_Location">Site</h1>
+
+    <div class="clearfix" id="chat_section">
+        <div id="chat_message_box">
+            <div id="all_chat_messages_list"><!-- All Chat Messages Go Here--></div>
+            <div class="clearfix" id="all_chat_message_box_buttons">
+                <div id="chat_box_message_input_container">
+                    <input id="chat_box_message_place_input_text" type="text" placeholder="Enter Text Here">
+                </div>
+                <div id="chat_box_message_send_button_container">
+                    <input id="chat_box_message_input_button" type="button" value="Send">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix" id="chat_file_box">
+            <div id="chat_file_button_box">
+                <div id="chat_file_upload">
+                    <input  id="file_upload_button" type="file" name="upload" multiple onchange="handleFiles(this.files)">
+
+
+                    </div>
+                <div id="chat_file_download">download</div>
+            </div>
+            <div id="chat_file_list_box">
+                <h1 id="chat_file_list_title">Files</h1>
+                <ol id="chat_file_list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+
+            </div>
+            <!--
+            <form id="file_upload_buttons" target="upload_result" method="POST" action="" enctype="multipart/form-data">
+                <input id="file_select" type="file" name="avatar">
+            </form>
+            -->
+            <!-- <input onchange="addFiles(this.files)" type="file" id="files" name="files[]" multiple>-->
+        </div>
+    </div>
+    <!--  <div id="video_container"></div> -->
+</div>
+<!--End - Content-->
+
+<div id="dropbox"> Drop it here! </div>
+<script src="sidebar.js"></script>
+
+<!-- to be used
+<script src="webtorrent.min.js"></script>
+<script src="/js/crypto/hmac-sha512.js"></script>
+-->
+<!-- RTC End -->
+</body>
+</html>
+<!-- <mark> <noframes> <noscript> <section>
+<dl> <dt> <dd>  <address>   <applet>  <object> -->
+
