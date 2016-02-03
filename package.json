@@ -1,0 +1,22 @@
+{
+  "name": "orangepeel",
+  "version": "1.0.0",
+  "description": "a code snippet to rank all web elements as expired objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jnull/orangepeel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jnull/orangepeel/issues"
+  },
+  "homepage": "https://github.com/Jnull/orangepeel#readme",
+  "dependencies": {
+    "jpm": "^1.0.5"
+  }
+}
