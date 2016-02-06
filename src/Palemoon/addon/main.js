@@ -2,7 +2,6 @@ var gp = require("sdk/preferences/service");
 gp.set("devtools.storage.enabled", true); //enable storage view in devtools
 gp.set("security.mixed_content.block_active_content", false); //cors enabled
 
-
 var data = require("sdk/self").data;
 var pageMod = require("sdk/page-mod");
 
