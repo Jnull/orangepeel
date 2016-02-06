@@ -1,6 +1,6 @@
 # OrangePeel
 
-OrangePeel is a client side web browser add-on created for a transparent and accountable internet experience. Allowing users to share, and control web content democratically and in real time. All perferences and content are ranked using a collective set theory, and geo-location, applying addition, and expiration. The content store is hosted through client and server p2p html5 api's, and focused on a fully available  redudant decenterlized network.
+OrangePeel is a client side web browser add-on created for a transparent and accountable internet experience. Allowing users to share, control web content democratically, and all in real time. All preferences and content are ranked using a collective set theory, and geo-location, applying addition, and expiration. The content store is hosted through client and server p2p html5 api's, and focused on a fully available, redudant, and decenterlized network.
 
   - Vote to Remove and Remove Elements by pressing the delete key
   - Control+Z will undo the Element removed
