@@ -1,0 +1,67 @@
+<saml2p:AuthnRequest AssertionConsumerServiceURL="https:/
+/nike.taleo.net/smartorg/SamlAssertionConsumerService.jss
+" Destination="https://whqpfed.nike.com:9031/idp/SSO.saml
+2" ID="_04329e88f3dd8b2a86df8e616fa16f88" IssueInstant="2
+016-02-10T16:53:49.961Z" ProtocolBinding="urn:oasis:names
+:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0" xmlns:saml
+2p="urn:oasis:names:tc:SAML:2.0:protocobCI <saml2:Issuer x
+mlns:saml2="urn:oasis:names:tc:SAML:2.0:assertiobiI http:/
+/www.taleo.com/smartorg</saml2:Issuer><ds:Signature xmlns
+:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInZm8 
+
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/
+2001/10/xml-exc-c14n#Ii8 
+<ds:SignatureMethod Algorithm="h
+ttp://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Referenc
+e URI="#_04329e88f3dd8b2a86df8e616fa16f88">
+<ds:Transform
+s>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xml
+dsig#enveloped-signatureIi8 
+<ds:Transform Algorithm="http
+://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespa
+ces PrefixList="ds saml2 saml2p" xmlns:ec="http://www.w3.
+org/2001/10/xml-exc-c14n#"/></ds:Transform>
+</ds:Transfor
+bXM 
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09
+/xmldsig#sha1"/>
+<ds:DigestValdWU lfZEi2+IOzaZdoByaOoqsMeT
+BrY=</ds:DigestValdWU 
+</ds:Reference>
+</ds:SignedInZm8 
+<d
+s:SignatureValue>
+EQiLkZ/cCyzfWptZCgvzMR8qZ33llUonhJddM2D
+zJdddves+voLcE4wUkAv2zh1nrEBECnhSfvSi
+KDJRraKZJ+BijDSw0KZ
+q6BDOnacr+FCEuEo6hUnzPyfvIGbh4QUrDmSoHu7ZVrXsDlEkCTJvhN2D
+
+sgTS9SgX8vf//VhuKgg=
+</ds:SignatureValdWU 
+<ds:KeyInfo><d
+s:X509Data><ds:X509Certificate>MIIB+TCCAWKgAwIBAgIIDe152i
+MOXKwwDQYJKoZIhvcNAQEFBQAwPDEbMBkGA1UEChMST3JhY2xl
+IENvcn
+BvcmF0aW9uMQ0wCwYDVQQLEwRQcm9kMQ4wDAYDVQQDEwVUYWxlbzAgFw0
+xNTExMDMxMjEw
+MjBaGA8yMTE1MTEwMzEyMTAyMFowPDEbMBkGA1UEChM
+ST3JhY2xlIENvcnBvcmF0aW9uMQ0wCwYD
+VQQLEwRQcm9kMQ4wDAYDVQQ
+DEwVUYWxlbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwPuH
+qSu
+5Ah9Oa6q73Ag+nqyKHrRNfD5DPBd6iwfQqrvSov3enPNtijaPDq4A5j5R
+o+UXiawuJhFAV8KX
+wcBd7jbSdFHEN7P17uNId8GwaZ1U/CFz/xf3LvzX
+GPeSw4GK9uBD+nzp6R+wRCMDOMoQCmEhlNQ6
+HwtzrobKgZS60O0CAwEA
+AaMCMAAwDQYJKoZIhvcNAQEFBQADgYEAgIpqSRfS/QhZwjJpcjf3oydK
+
+DZF4Xkdh2SLuBFTED1S0RZHuQWMjf1HfuL5FxyA+E5uU4Adebhrq4mKlm
+bT+nHMI8k2Xv2UfBS4R
+tplVOytTAOu9OCjNtLAM+kUtsvYLdcu1hWWjg
+CW4r3nil53hIB1+ERaaO3gFcAFm/9RK8mQ=</ds:X509Certificate><
+/ds:X509Data></ds:KeyInfo></ds:Signature></saml2p:AuthnRe
+quec3Q 

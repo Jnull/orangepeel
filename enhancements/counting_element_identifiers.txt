@@ -1,0 +1,10 @@
+xpath count (stats)
+class counter (stats)
+id counter (stats)
+
+Right Angle Zipped (Next Buttons)
+
+Click Walls 
+Content Walls
+Login Walls
+Subscription Walls
