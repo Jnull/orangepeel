@@ -1,0 +1,12 @@
+/**
+ * Created by Void on 11/21/2015.
+ */
+.hide_personal_element {
+    display : none !important;
+    visibility : hidden !important;
+}
+
+.show_personal_element_hl {
+    background-color: #6a5acd;
+    opacity: 0.6;
+}

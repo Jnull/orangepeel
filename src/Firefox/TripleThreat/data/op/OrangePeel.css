@@ -1,0 +1,164 @@
+/*
+*:hover, *:active {
+background: red; !important;
+}
+*/
+
+/* Stub Interface */
+
+#top-stub {
+    background-color: #EEE;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0px);
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 3px 0px;
+    width: 5px;
+    min-width: 120px;
+    max-width: 120px;
+    color: #DC143C;
+}
+
+#right-stub {
+    background-color: #EEE;
+    position: fixed;
+    text-align: center;
+    right: 0px;
+    bottom: 50%;
+    box-shadow: 0px 0px 2px 1px;
+    width: 5px;
+    min-width: 60px;
+    max-width: 60px;
+    color: #DC143C;
+}
+
+#middle-stub {
+    background-color: #EEE;
+    position: fixed;
+    text-align: center;
+    right: 0px;
+    bottom: 50%;
+    box-shadow: 0px 0px 2px 1px;
+    width: 5px;
+    min-width: 60px;
+    max-width: 60px;
+    color: #DC143C;
+}
+
+#bottom-stub {
+    background-color: #EEE;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0px);
+    -webkit-border-radius: 12px 12px 0px 0px;
+    -moz-border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0px 0px 2px 1px;
+    width: 5px;
+    min-width: 60px;
+    max-width: 60px;
+    color: #DC143C;
+}
+
+#left-stub {
+    background-color: #EEE;
+    position: fixed;
+    text-align: center;
+    left: 0%;
+    bottom: 50%;
+    transform: translate(0%, 0%);
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 2px 1px;
+    width: 5px;
+    min-width: 60px;
+    max-width: 60px;
+    color: #DC143C;
+}
+/* Same CSS as above, plus */ .icon-alone { display: inline-block; /* Chrome 19 was weird with clickability without this */ } .screen-reader-text { /* Reusable, toolbox kind of class */ position: absolute; top: -9999px; left: -9999px; }
+#top-stub {
+    width: 320px;
+    height: 240px;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    margin-top : -120px;
+    margin-left: -160px;
+}
+
+.resize-drag {
+    background-color: #29e;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 20px;
+
+    width: 120px;
+   /* z-index : 2147483647; */
+    /* This makes things *much* easier */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.pv_fix_fixed_position {
+    position: static;
+}
+
+.pv_highlighter::before {
+    border-top-color: red;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+.pv_highlighter::after {
+    border-bottom-color: red;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.pv_highlighter {
+ /*   outline : 3px solid red;*/
+  /* border : 2px solid darkgray !important; */
+}
+
+.pv_highlighter::before {
+    border-left-color: red;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.pv_highlighter::after {
+    border-right-color: red;
+    border-right-width: 2px;
+    border-right-style: solid;
+
+}
+
+.hide_master_element {
+    display : none !important;
+    visibility : hidden !important;
+}
+
+.hide_personal_element {
+    display : none !important;
+    visibility : hidden !important;
+}
+
+.show_personal_element_hl {
+    background-color: #6a5acd;
+    opacity: 0.6;
+   /* display : none !important;
+    visibility : hidden !important; */
+}
+
+.show_master_element_hl {
+    background-color: #edff64;
+    opacity: 0.6;
+}
+

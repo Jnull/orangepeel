@@ -1,0 +1,34 @@
+{
+  "name": "Page action by URL",
+  "version": "1.0",
+  "description": "Shows a page action for urls which have the letter 'g' in them.",
+  "page_action" :
+  {
+    "default_icon" : "data/icon-19.png",
+    "default_title" : "There's a 'G' in this URL!"
+  },
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "icons" : {
+    "48" : "data/icon-48.png",
+    "128" : "data/icon-128.png"
+  },
+  "manifest_version": 2,
+  
+    "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "css": ["data/op/OrangePeel.css"],
+      "js": [
+        "data/libs/timeuuid.js",
+        "data/libs/localforage.js",
+        "data/op/OrangePeel_Events.js",
+        "data/op/OrangePeel_Functions.js",
+        "data/op/OrangePeel_Pageshow.js"
+      ]
+    }
+  ]
+  
+  
+}

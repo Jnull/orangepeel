@@ -10,7 +10,7 @@ var currentWindow = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.
  /////////////////////////////var ws = require("./net/websocket")('ws://10.0.0.158:8080');
   var ws = new currentWindow.Services.appShell.hiddenDOMWindow.WebSocket('wss://scooby-boxy.rhcloud.com:8443', ['13', '8']);
   //var ws = new currentWindow.Services.appShell.hiddenDOMWindow.WebSocket('ws://10.0.0.158:8080', ['13', '8']);
-  currentWindow.xxx = ws;
+  currentWindow.op_websocket = ws;
 
 pageMod.PageMod({
   include: "*",

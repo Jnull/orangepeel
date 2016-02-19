@@ -1,3 +1,6 @@
 .git
 .idea
 node_modules
+.pem
+*.pem
+*.*/pem
