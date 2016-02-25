@@ -1,0 +1,6 @@
+
+	
+thanks, is there also a fast way to get a reference of the iframe it is inside, or do I need to iterate through all iframes? – user730569 Sep 9 '12 at 2:49
+1 	 
+	
+You can use document.defaultView and window.frameElement: node.ownerDocument.defaultView.frameElement (doesn't seem to work in IE and below though). 

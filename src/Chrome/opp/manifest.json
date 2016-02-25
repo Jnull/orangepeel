@@ -1,0 +1,33 @@
+{
+  "name": "ControlZweb",
+  "version": "1.0",
+  "description": "ControlZweb allows the user to delete ad's and content walls that get in the users way of seeing what the website is hosting. Hover your mouse over ad's or content walls and press the delete key to remove web elements.  To undo delete press the undo shortcut (Control+Z).",
+  "page_action" :
+  {
+    "default_icon" : "data/Orange_straw.png",
+    "default_title" : "Delete ad's with the delete key"
+  },
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "icons" : {
+    "128" : "data/Orange_straw.png"
+  },
+  "manifest_version": 2,
+    "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://*/*", "http://*/*"],
+      "css": ["data/op/Styles.css"],
+      "js": [
+        "data/libs/uuid.js",
+        "data/libs/localforage.js",
+        "data/op/Events.js",
+        "data/op/Functions.js",
+        "data/op/Pagemod.js"
+      ]
+    }
+  ]
+  
+  
+}

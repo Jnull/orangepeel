@@ -14,15 +14,15 @@ var currentWindow = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.
 
 pageMod.PageMod({
   include: "*",
-  contentStyleFile: data.url("OrangePeel.css"),
+  contentStyleFile: data.url("Styles.css"),
   contentScriptFile: [
   data.url("libs/polyfill.js"),
   data.url("libs/fingerprint.js"),
   data.url("libs/localforage.js"),
-  data.url("libs/timeuuid.js"),
-  data.url("OrangePeel_Events.js"),
-  data.url("OrangePeel_Functions.js"),
-  data.url("OrangePeel_onPageshow.js")
+  data.url("libs/uuid.js"),
+  data.url("op/Events.js"),
+  data.url("op/Functions.js"),
+  data.url("op/Pagemod.js")
   ],
   onAttach: function(tab_worker) {
 

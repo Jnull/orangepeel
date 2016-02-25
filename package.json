@@ -1,23 +1,28 @@
 {
-    "license": "ISC", 
-    "name": "orangepeel", 
-    "repository": {
-        "url": "git+https://github.com/Jnull/orangepeel.git", 
-        "type": "git"
-    }, 
-    "author": "", 
-    "bugs": {
-        "url": "https://github.com/Jnull/orangepeel/issues"
-    }, 
-    "version": "1.0.0", 
-    "dependencies": {
-        "jpm": "^1.0.5"
-    }, 
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    }, 
-    "main": "index.js", 
-    "homepage": "https://github.com/Jnull/orangepeel#readme", 
-    "id": "jid1-NBV3wWsUmVluMA", 
-    "description": "a code snippet to rank all web elements as expired objects"
+  "license": "ISC",
+  "name": "orangepeel",
+  "repository": {
+    "url": "git+https://github.com/Jnull/orangepeel.git",
+    "type": "git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Jnull/orangepeel/issues"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "jpm": "^1.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "homepage": "https://github.com/Jnull/orangepeel#readme",
+  "id": "jid1-NBV3wWsUmVluMA",
+  "description": "a code snippet to rank all web elements as expired objects",
+  "scripts": {
+    "preinstall": "./configure",
+    "install": "make && make install",
+    "wireup": "start ."
+  }
 }

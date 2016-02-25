@@ -1,0 +1,1 @@
+jpm sign --api-key %auth0% --api-secret %auth1%

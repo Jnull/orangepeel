@@ -1,0 +1,30 @@
+{
+  "name": "orangepeel",
+  "version": "0.0.01",
+  "homepage": "https://github.com/Jnull/orangepeel",
+  "authors": [
+    "Jared Null <jnull@whitehat.io>"
+  ],
+  "description": "libraries",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "babel": "*",
+    "localforage": "~1.4.0",
+    "node-uuid": "~1.4.7",
+    "react": "~0.14.7"
+  }
+}

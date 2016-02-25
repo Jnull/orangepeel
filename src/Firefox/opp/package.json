@@ -1,0 +1,13 @@
+{
+  "main": "lib/main.js",
+  "name": "ControlZWeb",
+  "title": "ControlZWeb",
+  "id": "ec8030f7-c31a-464f-9b0e-13a3a9e97384@jetpack",
+  "description": "ControlZ allows any user to bypass content walls by mousing over and pressing the delete key to remove the elemnt, pressing control+z restore the element back to the page",
+  "author": "",
+  "license": "MPL 2.0",
+  "version": "0.1.4",
+  "permissions": {
+    "unsafe-content-script": true
+  }
+}

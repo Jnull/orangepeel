@@ -1,0 +1,1 @@
+wget --post-file=controlzweb.xpi http://localhost:7777/
