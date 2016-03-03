@@ -2,12 +2,10 @@
  * Created by Void on 11/21/2015.
  */
 
-
 function presskeys_auctions(e) {
     // e.preventDefault();  //this prevents scrolling
     e.stopPropagation(); //This prevents scrolling up the page on a deleted element.
     //  e.stopImmediatePropagation();
-
 
     var code = e.keyCode || e.which;
 
@@ -22,9 +20,6 @@ function presskeys_auctions(e) {
 
         var deleted_element = the_element; //Current Mouseover Hovered Element.
         var element_xpath = getXPath(the_element);
-
-        console.log("Deleted_Eelement", deleted_element, "Xpath:  " + element_xpath);
-
 
         if (!deleted_element instanceof HTMLIFrameElement && element_xpath === "/" || element_xpath === '/HTML[1]' || element_xpath === '/HTML[1]/BODY[1]') {
           //  console.log("Stopped Further Delete From: ", element_xpath);
@@ -83,6 +78,8 @@ function presskeys_auctions(e) {
                         var last_element_xpath = elements_array.pop();
                         var last_element_node = document.evaluate(last_element_xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                         if (last_element_node) {
+
+
                             last_element_node.dataset.bypassObserver = 'true';
                             last_element_node.classList.remove('hide_personal_element');
                             last_element_node.classList.add('show_personal_element_hl');
@@ -90,6 +87,9 @@ function presskeys_auctions(e) {
                                 last_element_node.classList.remove('show_personal_element_hl');
                                 e.target.removeEventListener('mouseover', arguments.callee);
                             });
+
+                            last_element_node.scrollIntoView({block: "end", behavior: "auto" /*"smooth", "smooth", "auto"*/});
+
                         }
 
                         delete result[i].xpath[last_element_xpath];

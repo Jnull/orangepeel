@@ -15,14 +15,27 @@ localforage.config({
 /*
  * Auto Loading Events
  */
-document.addEventListener('mouseover', pushvote_mouse_over_highlighter, false);
-document.addEventListener('keydown', presskeys_auctions, true);
+//document.addEventListener('mouseover', pushvote_mouse_over_highlighter, false);
+//document.addEventListener('keydown', presskeys_auctions, true);
+
+//Action Button
+self.port.on("Enable_Listeners", function(tag) {
+    document.addEventListener('mouseover', pushvote_mouse_over_highlighter, false);
+    document.addEventListener('keydown', presskeys_auctions, true);
+});
+
+self.port.on("Disable_Listeners", function(tag) {
+    document.removeEventListener('mouseover', pushvote_mouse_over_highlighter, false);
+    document.removeEventListener('keydown', presskeys_auctions, true);
+});
 
 /*
  * Pulling in all master rules from localstorage using localforage
  */
-//make sure all scrolling is legit scrollbars
-document.body.style.cssText = "overflow:auto";
+//make sure all scrolling is legit scrollbars //BUG 333 This breaks palemoon https://support.google.com/adsense/answer/1354736?hl=en
+if (document.body) {
+    document.body.style.cssText = "overflow:auto";
+}
 
 localforage.getItem('master_delete_rules').then(function (result, err) {
     result = result || [];
@@ -41,7 +54,6 @@ localforage.getItem('master_delete_rules').then(function (result, err) {
     if (result && result[0] && result[0].xpath) {
         var xpath_array_rules = Object.keys(result[0].xpath);
     }
-
 
     var mutation = new MutationObserver(function (mutations) {
         mutations.forEach(function (incoming_mutate) {

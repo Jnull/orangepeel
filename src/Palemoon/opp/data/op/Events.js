@@ -2,15 +2,12 @@
  * Created by Void on 11/21/2015.
  */
 
-
 function presskeys_auctions(e) {
     // e.preventDefault();  //this prevents scrolling
     e.stopPropagation(); //This prevents scrolling up the page on a deleted element.
     //  e.stopImmediatePropagation();
 
-
     var code = e.keyCode || e.which;
-
     //Delete Key
     if (code === 46 && !(document.activeElement instanceof HTMLInputElement && document.activeElement.type == 'text') && !(document.activeElement instanceof HTMLTextAreaElement && document.activeElement.type == 'textarea')) {
 
@@ -23,7 +20,6 @@ function presskeys_auctions(e) {
         var delete_element = the_element; //Current Mouseover Hovered Element.
         var element_xpath = getXPath(the_element);
 
-        console.log(element_xpath);
         if (!delete_element instanceof HTMLIFrameElement && element_xpath === "/" || element_xpath === '/HTML[1]' || element_xpath === '/HTML[1]/BODY[1]') {
           //  console.log("Stopped Further Delete From: ", element_xpath);
           //  console.log("This is a frame", delete_element instanceof HTMLIFrameElement);
@@ -32,8 +28,6 @@ function presskeys_auctions(e) {
           //  if (node.ownerDocument !== document) {
           //      prompt("this is an iframe apparently!?");
           //  }
-
-
             return;
         }
 

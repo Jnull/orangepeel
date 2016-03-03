@@ -2,12 +2,10 @@
  * Created by Void on 11/21/2015.
  */
 
-
 function presskeys_auctions(e) {
     // e.preventDefault();  //this prevents scrolling
     e.stopPropagation(); //This prevents scrolling up the page on a deleted element.
     //  e.stopImmediatePropagation();
-
 
     var code = e.keyCode || e.which;
 

@@ -4,14 +4,6 @@
 
 //Keep these vars here, they become dead objects in PaleMoon
 var the_element;
-var calculated_Xpos;
-var calculated_Ypos;
-
-
-function getMouseXY(e) {
-    calculated_Xpos = e.pageX - window.pageXOffset;
-    calculated_Ypos = e.pageY - window.pageYOffset;
-}
 
 function pushvote_mouse_over_highlighter(e) {
     the_element = e.target;

@@ -22,7 +22,6 @@ document.addEventListener('keydown', presskeys_auctions, true);
  * Pulling in all master rules from localstorage using localforage
  */
 //make sure all scrolling is legit scrollbars
-document.body.style.cssText = "overflow:auto";
 
 localforage.getItem('master_delete_rules').then(function (result, err) {
     result = result || [];
